@@ -10,24 +10,25 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>More | Kakao clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
-      <div class="status-bar__column"></div>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">100%</span>
-      <i class="fas fa-battery-full"></i>
-      <div class="status-bar__column"></div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="cheader__title">More</h1>
+        <h1 class="header__title">More</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
@@ -46,48 +47,48 @@
 
     <main class="more">
       <header class="nore_header">
-          <div class="friends__friend friend friend--lg">
-              <div class="friend__column">
-                <img class="friend__avatar g-avatar" src="./images/avatar.jpg" />
-                <div class="friend__content">
-                  <span class="friend__name">
-                    Nicolas Serrano
-                  </span>
-                  <span class="friend__status">
-                    itnicolasme@gmail.com
-                  </span>
-                </div>
-              </div>
-              <div class="firiend__column">
-                <i class="far fa-comment-alt fa-2x"></i>
-              </div>
-              <ul class="more__btn-list">
-                <li class="more__btn">
-                  <span class="more__btb-icon">
-                      <i class="far fa-smile fa-2x"></i>
-                  </span>
-                  <span class="more__btn-title">
-                    Emoticon
-                  </span>
-                </li>
-                <li class="more__btn">
-                  <span class="more__btb-icon">
-                      <i class="fas fa-brush fa-2x"></i>
-                  </span>
-                  <span class="more__btn-title">
-                    Themes
-                  </span>
-                </li>
-                <li class="more__btn">
-                  <span class="more__btb-icon">
-                      <i class="fab fa-kickstarter-k fa-2x"></i>
-                  </span>
-                  <span class="more__btn-title">
-                    Account
-                  </span>
-                </li>
-              </ul>
+        <div class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img class="friend__avatar g-avatar" src="./images/avatar.jpg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Nicolas Serrano
+              </span>
+              <span class="friend__status">
+                itnicolasme@gmail.com
+              </span>
             </div>
+          </div>
+          <div class="firiend__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+          <ul class="more__btn-list">
+            <li class="more__btn">
+              <span class="more__btb-icon">
+                <i class="far fa-smile fa-2x"></i>
+              </span>
+              <span class="more__btn-title">
+                Emoticon
+              </span>
+            </li>
+            <li class="more__btn">
+              <span class="more__btb-icon">
+                <i class="fas fa-brush fa-2x"></i>
+              </span>
+              <span class="more__btn-title">
+                Themes
+              </span>
+            </li>
+            <li class="more__btn">
+              <span class="more__btb-icon">
+                <i class="fab fa-kickstarter-k fa-2x"></i>
+              </span>
+              <span class="more__btn-title">
+                Account
+              </span>
+            </li>
+          </ul>
+        </div>
       </header>
       <section class="more__suggestions">
         <h5 class="more__title">Suggestions</h5>
@@ -99,16 +100,20 @@
             <span class="suggestion__title">
               Kakao Story
             </span>
+          </li>
+
           <li class="more__suggestion suggestion">
             <span class="suggestion__icon">
-                <i class="fas fa-beer fa-2x"></i>
+              <i class="fas fa-beer fa-2x"></i>
             </span>
             <span class="suggestion__title">
               Kakao friends
             </span>
+          </li>
+
           <li class="more__suggestion suggestion">
             <span class="suggestion__icon">
-                <i class="fas fa-gamepad fa-2x"></i>
+              <i class="fas fa-gamepad fa-2x"></i>
             </span>
             <span class="suggestion__title">
               Friends Gem
@@ -116,7 +121,6 @@
           </li>
         </ul>
       </section>
-
     </main>
     <nav class="nav">
       <ul class="nav_list">
