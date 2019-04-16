@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Chat | Kakao clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -42,25 +42,25 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">
           Friday, January 11, 2019
         </span>
         <li class="incoming-message message">
-          <img src="./images/avatar.jpg" class="g-avatar" />
-          <div class="maessage__content">
+          <img src="./images/avatar.jpg" />
+          <div class="message__content">
             <span class="message__author">Best Friend</span>
-            <div class="message_bubble">
+            <div class="message__bubble">
               Congrats I love you!
             </div>
           </div>
-          <span class="message_timesrtamp">15:19</span>
+          <span class="message__timesrtamp">15:19</span>
         </li>
-        <li class="incoming-message message">
-          <span class="message_timesrtamp">15:19</span>
-          <div class="maessage__content">
-            <div class="message_bubble">
+        <li class="sent-message message">
+          <span class="message__timesrtamp">15:19</span>
+          <div class="message__content">
+            <div class="message__bubble">
               Thank you see you soon!
             </div>
           </div>
