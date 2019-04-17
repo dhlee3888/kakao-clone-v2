@@ -5,6 +5,7 @@
 .chats-body .header,
 .chats-body .status-bar {
     padding: 0px 20px;
+    margin-top:10px;
 }
 
 .chat-screen {
@@ -25,7 +26,9 @@
     background-color:#e2e2e2;
     padding: 0px 20px;
     border-radius:  40px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(50,50,93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
 }
 
 .chat__write-column:nth-child(2) {
@@ -67,16 +70,40 @@
 
 .message {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .message .message__content {
     width: 80%;
+ 
 }
 
 .incoming-message{
     align-self: flex-start;
+    align-items: flex-start;
+}
+
+.incoming-message .message__author{
+    margin-top: 3px;
+    display: block;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.message .message__bubble {
+    box-shadow: rgba(50,50,93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    border-radius: 14px;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+
 }
 
 .sent-message{
@@ -86,11 +113,21 @@
 .incoming-message img {
     width: 30px;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-.message .message__bubble {
-    box-shadow: rgba(50,50,93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+
+
+.message .message__timesrtamp{
+    padding: 10px 5px;
+
+}
+.incoming-message .message__bubble{
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient( to right, #7b4397, #dc2430);
+}
+
+.sent-message .message__bubble{
+    border-bottom-right-radius: 0px;
+    background-image: linear-gradient( to left, #00c6ff, #0072ff);
 }
